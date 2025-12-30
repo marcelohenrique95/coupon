@@ -34,8 +34,8 @@ public class CouponEntity {
         this.description = couponDTO.getDescription();
         this.discountValue = couponDTO.getDiscountValue();
         this.expirationDate = couponDTO.getExpirationDate();
-        this.published = couponDTO.getPublished();
-        this.active = couponDTO.getPublished() != null && couponDTO.getPublished();
+        this.published = couponDTO.getPublished() != null && couponDTO.getPublished();
+        this.active = true;
 
         validate();
     }
